@@ -16,11 +16,14 @@ $.gulp.task('webpack', (callback)=> {
     });
 });
 $.gulp.task('minJS',function(){
-    $.gp.uglify()
     return $.gulp.src('./app/temp/scripts/App.js')
         .pipe($.gp.uglify())
         .pipe($.gp.rename({
             suffix: ".min"
         }))
         .pipe($.gulp.dest('./app/temp/scripts'));
+});
+$.gulp.task('buildScripts',function(){
+    return $.gulp.src('./app/temp/scripts/**/*.min.js')
+        .pipe($.gulp.dest('./docs/temp/scripts'));
 });

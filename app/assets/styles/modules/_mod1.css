@@ -1,5 +1,5 @@
 body {
-    color: red;
+    color: green;
     transition: all 1s ease-in;
     background: $mainBlue;
     @mixin sm {

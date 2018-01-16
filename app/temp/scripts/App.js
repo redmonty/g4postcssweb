@@ -76,7 +76,7 @@ var _Modal2 = _interopRequireDefault(_Modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// log('Hello everybody from app js');
+(0, _Modal2.default)('Hello everybody from app js');
 // log('Hello everybody from app js');
 console.log('sfsd');
 

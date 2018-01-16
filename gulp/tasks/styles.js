@@ -38,4 +38,7 @@ $.gulp.task('minCss', function() {
         }))
         .pipe($.gulp.dest('./app/temp/styles'));
 });
-
+$.gulp.task('buildCss',function(){
+    return $.gulp.src('./app/temp/styles/**/*.min.css')
+        .pipe($.gulp.dest('./docs/temp/styles'));
+});

@@ -24,9 +24,3 @@ $.gulp.task('default', $.gulp.series(
         'serve'
     )
 ));
-$.gulp.task('build', $.gulp.series(
-    'delDist',
-    'copyGeneralFiles',
-    'html',
-    'optimizeImages'
-));

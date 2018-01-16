@@ -7,9 +7,5 @@ module.exports = [
     './gulp/tasks/clean.js',
     './gulp/tasks/serve.js',
     './gulp/tasks/watch.js',
-    './gulp/tasks/build/prewDist.js',
-    './gulp/tasks/build/delDist.js',
-    './gulp/tasks/build/copyGenFiles.js',
-    './gulp/tasks/build/optimizeImg.js',
-    './gulp/tasks/build/html.js'
+    './gulp/tasks/production.js'
 ];
