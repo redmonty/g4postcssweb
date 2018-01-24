@@ -17,7 +17,8 @@ $.gulp.task('default', $.gulp.series(
     'clean',
     $.gulp.parallel(
         'styles',
-        'scripts'
+        'scripts',
+        'pug'
     ),
     $.gulp.parallel(
         'watch',

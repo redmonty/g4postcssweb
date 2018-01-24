@@ -3,8 +3,8 @@ module.exports = function() {
     $.gulp.task('serve', function() {
         $.browserSync.init({
             open: false,
-            server: './app'
+            server: './app/temp'
         });
-        $.browserSync.watch('app', $.browserSync.reload);
+        $.browserSync.watch('app/temp', $.browserSync.reload);
     });
 };
