@@ -2,7 +2,7 @@
 module.exports = function() {
     $.gulp.task('clean', function() {
         return $.del([
-            'temp'
+            'app/temp'
         ]);
     });
 };
